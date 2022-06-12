@@ -11,12 +11,8 @@
     <title>{% block title %}{{ config.title }}{% endblock title %}</title>
 
     <!-- CSS -->
-    {% if config.highlight_theme == "solarized-dark" %}
     <link rel="stylesheet" href="{{ get_url(path="colors-dark.css", trailing_slash=false) }}">
-    {% endif %}
-    {% if config.highlight_theme == "solarized-light" %}
-    <link rel="stylesheet" href="{{ get_url(path="colors-light.css", trailing_slash=false) }}">
-    {% endif %}
+    <!--<link rel="stylesheet" href="{{ get_url(path="colors-light.css", trailing_slash=false) }}">-->
 
     {% if config.generate_rss %}
     <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
