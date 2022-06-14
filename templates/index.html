@@ -11,8 +11,14 @@
     <title>{% block title %}{{ config.title }}{% endblock title %}</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="{{ get_url(path="colors-dark.css", trailing_slash=false) }}">
+    {% if config.extra.solar_theme == "dark" %}
+    <link rel="stylesheet" href="{{ get_url(path="dark.css", trailing_slash=false) }}">
+    {% elif config.extra.solar_theme == "light" %}
+    <link rel="stylesheet" href="{{ get_url(path="light.css", trailing_slash=false) }}">
+    {% else %}
+    <link rel="stylesheet" href="{{ get_url(path="gray.css", trailing_slash=false) }}">
     <!--<link rel="stylesheet" href="{{ get_url(path="colors-light.css", trailing_slash=false) }}">-->
+    {% endif %}
 
     {% if config.generate_rss %}
     <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
@@ -34,9 +40,17 @@
             <ul class="nav">
               {% block sidebar_nav %}
                 {% for link in config.extra.site_menus %}
+                  {% if link.type == "title" %}
+                  <li>
+                    <h2>
+                      {{ link.name }}
+                    </h2>
+                  </li>
+                  {% else %}
                   <li>
                     <a href="{{ link.url }}"><span>{{ link.name }}</span></a>
                   </li>
+                  {% endif %}
                 {% endfor %}
               {% endblock sidebar_nav %}
             </ul>
@@ -82,7 +96,7 @@
         <p class="copyright">
           {% block copyright %}
             Powered by <a href="https://www.getzola.org/">Zola</a> and the
-            <a href="https://github.com/hulufei/solar-theme-zola">Solar</a>-theme.
+            <a href="https://github.com/0xdkxy/solar-theme-zola">Solar</a>-theme.
           {% endblock copyright %}
         </p>
       </footer>

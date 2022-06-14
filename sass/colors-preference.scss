@@ -1,6 +1,9 @@
 @media (prefers-color-scheme: dark), (prefers-color-scheme: no-preference) {
-	@import 'colors-dark';
+	@import 'dark';
 }
 @media (prefers-color-scheme: light) {
-	@import 'colors-light';
+	@import 'light';
+}
+@media (prefers-color-scheme: gray) {
+	@import 'gray';
 }

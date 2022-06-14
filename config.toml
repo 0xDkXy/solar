@@ -12,8 +12,6 @@ compile_sass = true
 [markdown]
 highlight_code = true
 
-highlight_theme = "solarized-dark"
-
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
 
@@ -22,6 +20,11 @@ generate_rss = true
 [extra]
 # Put all your custom variables here
 site_menus = [
-  { url = "https://github/hulufei.com/solar-theme-zola", name = "Repository" },
-  { url = "rss.xml", name = "RSS" },
+  { type = "title", name = "More About Me" },
+  { type = "url", url = "https://github/hulufei.com/solar-theme-zola", name = "Repository" },
+  { type = "url", url = "rss.xml", name = "RSS" },
+  { type = "title", name = "Friends" },
+  { type = "url", url = "https://github.com/0xdkxy/", name = "0xDkXy" },
 ]
+
+solar_theme = "dark"

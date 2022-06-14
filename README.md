@@ -28,15 +28,16 @@ description = "Your blog description"
 
 ## Options
 
-### ~~Color schemes~~
+### Color schemes
 
-~~Set color scheme to (Solarized) `dark` or (Solarized) `light` with `highlight_theme` option:~~
+Set color scheme to (Solarized) `dark` or (Solarized) `light` with `solar_theme` option in `extra`:
 
 ```toml
-highlight_theme = "solarized-dark"
+[extra]
+...
+solar_theme = "dark"
 ```
 
-**Color schemes is wrong, the theme can not work with it, so i deleted it from the source code**
 
 ### Sidebar menu
 
