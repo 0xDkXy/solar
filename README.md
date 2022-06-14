@@ -6,6 +6,7 @@ Port of [Solar theme for Hugo](https://github.com/bake/solar-theme-hugo) to Zola
 
 ## Installation
 
+
 First download this theme to your `themes` directory:
 
 ```bash
@@ -27,13 +28,15 @@ description = "Your blog description"
 
 ## Options
 
-### Color schemes
+### ~~Color schemes~~
 
-Set color scheme to (Solarized) `dark` or (Solarized) `light` with `highlight_theme` option:
+~~Set color scheme to (Solarized) `dark` or (Solarized) `light` with `highlight_theme` option:~~
 
 ```toml
 highlight_theme = "solarized-dark"
 ```
+
+**Color schemes is wrong, the theme can not work with it, so i deleted it from the source code**
 
 ### Sidebar menu
 
