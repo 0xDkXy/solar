@@ -2,7 +2,7 @@ title = "Solar Theme"
 description = "A wizard is never late"
 
 # The URL the site will be built for
-base_url = "https://example.com"
+# base_url = "https://example.com"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
