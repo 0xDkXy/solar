@@ -45,8 +45,13 @@ Set a field in `extra` with a key of `site_menus`:
 
 ```toml
 site_menus = [
-  { url = "https://github.com/hulufei/solar-theme-zola", name = "Repository" },
-  { url = "rss.xml", name = "RSS" },
+  { type = "title", name = "More About Me" },
+  { type = "url", url = "https://github/hulufei.com/solar-theme-zola", name = "Repository" },
+  { type = "url", url = "rss.xml", name = "RSS" },
+  { type = "title", name = "Friends" },
+  { type = "url", url = "https://github.com/0xdkxy/", name = "0xDkXy" },
 ]
 ```
-Each link needs to have a `url` and a `name`.
+Each link needs to have a `url` and a `name`.  
+If type is `title`, it will be the title of following urls.  
+Otherwise it will be a hyperlink.
