@@ -1,6 +1,6 @@
 +++
 title = "What is Zola"
-date = 2017-09-24
+date = 2022-09-24
 template = "page.html"
 +++
 
