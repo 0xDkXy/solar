@@ -42,13 +42,13 @@
                 {% for link in config.extra.site_menus %}
                   {% if link.type == "title" %}
                   <li>
-                    <h2>
+                    <h2 class="text-left">
                       {{ link.name }}
                     </h2>
                   </li>
                   {% else %}
                   <li>
-                    <a href="{{ link.url }}"><span>{{ link.name }}</span></a>
+                    <a class="text-left" href="{{ link.url }}"><span>{{ link.name }}</span></a>
                   </li>
                   {% endif %}
                 {% endfor %}
