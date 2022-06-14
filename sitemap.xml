@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://0xdkxy.github.io/solar-theme-zola/</loc>
+        <loc>https://0xdkxy.github.io/solar/</loc>
     </url>
     <url>
-        <loc>https://0xdkxy.github.io/solar-theme-zola/markdown-syntax/</loc>
+        <loc>https://0xdkxy.github.io/solar/markdown-syntax/</loc>
         <lastmod>2020-05-14</lastmod>
     </url>
     <url>
-        <loc>https://0xdkxy.github.io/solar-theme-zola/page/1/</loc>
+        <loc>https://0xdkxy.github.io/solar/page/1/</loc>
     </url>
     <url>
-        <loc>https://0xdkxy.github.io/solar-theme-zola/page/2/</loc>
+        <loc>https://0xdkxy.github.io/solar/page/2/</loc>
     </url>
     <url>
-        <loc>https://0xdkxy.github.io/solar-theme-zola/some-article/</loc>
+        <loc>https://0xdkxy.github.io/solar/some-article/</loc>
         <lastmod>2017-09-24</lastmod>
     </url>
     <url>
-        <loc>https://0xdkxy.github.io/solar-theme-zola/some-other-article/</loc>
+        <loc>https://0xdkxy.github.io/solar/some-other-article/</loc>
         <lastmod>2017-09-25</lastmod>
     </url>
 </urlset>
