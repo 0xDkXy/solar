@@ -265,7 +265,7 @@ h3 {
 
 /*** Structure ***/
 #page {
-	width: 500px;
+	width: 600px;
 	margin: 0 auto;
 	position: relative;
 }
@@ -317,8 +317,8 @@ h3 {
 }
 
 #content {
-	width: 500px;
-	margin: 0 auto;
+	width: 600px;
+	margin: auto;
 }
 
 #sidebar {
@@ -365,11 +365,6 @@ article {
 	margin-bottom: 40px;
 }
 
-article.post:hover{
-	background-color: #044a5c;
-	border-radius: 5px;
-	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
 
 article h1 {
 	font-size: 17px;
@@ -394,6 +389,9 @@ article img {
 	margin: 0 auto 1em auto;
 }
 
+// article .post-content {
+// 	margin: 0 1px 0 1px;
+// }
 article .meta {
 	padding-top: 6px;
 	font-size: 0.85em;
@@ -641,7 +639,13 @@ pre[class*='language-'] {
 }
 
 .boxShadow:hover {
-	background-color: #044a5c;
+	background-color: #003441d1;
 	border-radius: 5px;
-	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	padding: 0 25px 0 25px;
 }
+
+.boxShadow {
+	padding: 0 25px 0 25px;
+}
+
