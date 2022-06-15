@@ -33,7 +33,7 @@
       <p>{{ config.description }}</p>
     </header>
     <div id="page">
-      <div id="sidebar">
+      <div id="sidebar" class="boxShadow">
         {% block sidebar %}
           {% if config.extra.site_menus %}
           <nav>
@@ -66,16 +66,18 @@
             {% set pages = section.pages %}
           {% endif %}
           {% for page in pages | reverse %}
-            <article class="post">
-              <h1><a href="{{ page.permalink }}">{{ page.title }}</a></h1>
-              {% if page.summary %}
-                <div class="post-content">
-                  {{ page.summary | safe }}
-                  <nav class="readmore"><a itemprop="url" href="{{ page.permalink | safe }}">Read More&nbsp;&raquo;</a></nav>
-                </div>
-              {% endif %}
-              <p class="meta">Posted on <span class="postdate">{{ page.date | date(format="%Y-%m-%d") }}</span></p>
-            </article>
+            <div class="boxShadow">
+              <article class="post">
+                <h1><a href="{{ page.permalink }}">{{ page.title }}</a></h1>
+                {% if page.summary %}
+                  <div class="post-content">
+                    {{ page.summary | safe }}
+                    <nav class="readmore"><a itemprop="url" href="{{ page.permalink | safe }}">Read More&nbsp;&raquo;</a></nav>
+                  </div>
+                {% endif %}
+                <p class="meta">Posted on <span class="postdate">{{ page.date | date(format="%Y-%m-%d") }}</span></p>
+              </article>
+            </div>
           {% endfor %}
           {% block pagination %}
             {% if paginator.previous or paginator.next %}

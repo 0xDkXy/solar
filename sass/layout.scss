@@ -147,6 +147,7 @@ a:visited {
 }
 a:hover {
 	color: #000000;
+	border-radius: 5px;
 }
 
 p {
@@ -362,6 +363,12 @@ h3 {
 /*** Posts ***/
 article {
 	margin-bottom: 40px;
+}
+
+article.post:hover{
+	background-color: #044a5c;
+	border-radius: 5px;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 article h1 {
@@ -631,4 +638,10 @@ pre[class*='language-'] {
 }
 .token.entity {
 	cursor: help;
+}
+
+.boxShadow:hover {
+	background-color: #044a5c;
+	border-radius: 5px;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }

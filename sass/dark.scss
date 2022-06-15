@@ -50,17 +50,21 @@ article h1 a.anchor {
 	color: #2aa198;
 }
 
+
+
 blockquote {
 	border-color: #cb4b16;
 }
 
 #sidebar a:hover {
 	background-color: transparent;
+	border-radius: 5px;
 }
 
 #sidebar a:hover span {
 	color: #2aa198;
 	background-color: #073642;
+	border-radius: 5px;
 }
 
 #sidebar .nav h2 {
