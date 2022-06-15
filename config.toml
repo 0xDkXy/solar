@@ -21,7 +21,7 @@ generate_rss = true
 # Put all your custom variables here
 site_menus = [
   { type = "title", name = "More About Me" },
-  { type = "url", url = "https://github/hulufei.com/solar-theme-zola", name = "Repository" },
+  { type = "url", url = "https://github.com/0xDkXy/solar", name = "Repository" },
   { type = "url", url = "rss.xml", name = "RSS" },
   { type = "title", name = "Friends" },
   { type = "url", url = "https://github.com/0xdkxy/", name = "0xDkXy" },
